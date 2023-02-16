@@ -1,0 +1,15 @@
+<div *ngIf="tenant" >
+
+<h3>{{tenant.name | uppercase}}</h3>
+  <div>
+    <label>Tenant:
+      <input width="300px" [(ngModel)]="tenant.name" placeholder="name"/>
+    </label>
+        <label>Address:
+      <input width="300px"  [(ngModel)]="tenant.address" placeholder="address"/>
+    </label>
+        <label>Contact:
+      <input width="300px"  [(ngModel)]="tenant.contact" placeholder="contact"/>
+    </label>
+  </div>
+

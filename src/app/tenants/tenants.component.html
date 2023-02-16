@@ -1,0 +1,7 @@
+<div class="tenants">
+  <div class="tenant" *ngFor="let tenant of tenants" [class.selected]="tenant === selectedTenant" (click)="onSelect(tenant)">
+	  <div class="name" width="100%">{{tenant.name}}</div><div class="address">{{tenant.address}}</div>
+  </div>
+</div>
+
+

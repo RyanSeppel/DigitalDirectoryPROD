@@ -1,0 +1,6 @@
+<ul class="tenants2">
+<li *ngFor="let tenant of tenants" [class.selected]="tenant === selectedTenant" (click)="onSelect(tenant)">
+<span class="badge">{{tenant.id}}: {{tenant.name}} {{tenant.address}} {{tenant.contact}}</span>
+</li>
+</ul>
+

@@ -1,0 +1,27 @@
+<header>
+	<div class="topLeft">
+		<div class="titleContainer">{{title}}</div>
+		<div class="subTitleContainer">{{subTitle}}</div>
+	</div>
+	<div class="topRight">
+		<div class="dateContainer">{{myDate | date:'d MMMM yyyy'}}</div>
+		<div class="timeContainer">{{myDate | date:'h:mm:ss a'}}</div>
+	</div>
+</header>
+<div class="content">
+	<app-tenants class="directoryContainer"></app-tenants>
+	<div class="adContainer">
+		<div class="imageCarousel" [ngStyle]="{'background-image': 'url(' + getImage(this, 13) + ')'}">    
+		</div>
+		<div class="foo">   
+		</div>
+	</div>
+</div>
+<footer>
+		<div class="spacer"></div>
+		<div class="powered-by">Powered By </div>
+		<div class="logo"></div>
+</footer>
+
+<app-tenant-detail [tenant]="selectedTenant"></app-tenant-detail>
+<router-outlet></router-outlet>

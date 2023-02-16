@@ -1,0 +1,145 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+	color: white;
+	font-family: "Verdana";
+	background-image: url('/assets/cc.jpg');
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-color:black;
+	display: flex;
+	height: 100vh;
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body > *, .content > div {
+	display: flex;
+}
+
+app-root {
+	flex: none;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+}
+
+header {
+	display: flex;
+	flex: none;
+	flex-flow: row;
+	width: 100%;
+	padding: 1em;
+	background-color: rgba(255,255,255,0.2);
+}
+
+header > * {
+    flex: 1 0 auto;
+}
+
+
+.titleContainer{
+	font-size: 4em;
+	font-weight: bold;
+}
+
+.dateContainer {
+	font-size: 2em;
+	font-weight: bold;
+	margin-top: 1.1em;
+}
+
+.topRight > * {
+	text-align: right;
+}
+
+.subTitleContainer, .timeContainer {
+	font-size: 1.5em;
+}
+
+.content {
+	flex-flow: row;
+	flex: 1 0 auto;
+	padding: 1em 1em 0 1em;
+	height: 0;
+	display: flex
+}
+
+.directoryContainer {
+	flex: 2 0 auto;
+	display: flex;
+	height: 100%;
+	font-size: 1.8em;
+	color: rgba(255,255,255,0.8);
+}
+
+.adContainer {
+   flex: 1 0 auto;
+   display: flex;
+   flex-flow: column;
+   margin-bottom: 1em;
+}
+
+.adContainer .imageCarousel {
+	flex: 1 0 auto;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top 50% center;
+}
+
+.adContainer .imageCarousel + .imageCarousel {
+	margin-top: 1em;
+}
+
+.adContainer .foo {
+	flex: 1 0 auto;
+	background-image: url('/assets/images/pfefferleinfo1.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom 50% center;
+}
+
+.adContainer .foo + .foo {
+	margin-top: 1em;
+}
+
+footer {
+	background-color: white;
+	padding: 1em;
+	color: black;
+	opacity: 0.8;
+	display: flex;
+	flex-flow: row;
+	height: 5em;
+	align-items: bottom;
+}
+
+footer > * {
+	flex: 0 1 auto;
+}
+
+footer > .powered-by {
+	margin-top: 1.2em;
+	font-size: 0.5em;
+	margin-right: 0.4em;
+}
+
+.spacer {
+	flex: 1 0 auto;
+}
+
+.logo {
+	background-image: url('/assets/jgLogo.jpg');
+	background-size: contain;
+	height: 100%;
+	background-repeat: no-repeat;
+	width:8%;
+	}
+
+.powered-by {
+	display: inline-block;
+}
